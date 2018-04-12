@@ -527,7 +527,7 @@ public abstract class IntrospectedTable {
         setSqlMapFullyQualifiedRuntimeTableName(calculateSqlMapFullyQualifiedRuntimeTableName());
         setSqlMapAliasedFullyQualifiedRuntimeTableName(calculateSqlMapAliasedFullyQualifiedRuntimeTableName());
 
-        String calculateMyBatis3XmlMapperFileName = calculateMyBatis3XmlMapperFileName().split(".")[0];
+        String calculateMyBatis3XmlMapperFileName = calculateMyBatis3XmlMapperFileName().split("\\.")[0];
         
         
         setCountByExampleStatementId(calculateMyBatis3XmlMapperFileName+"_countByExample"); //$NON-NLS-1$
